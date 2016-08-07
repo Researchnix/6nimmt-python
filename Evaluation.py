@@ -8,7 +8,7 @@
 
 class Evaluation:
     n = 0
-    players = {}
+    players = []
     data = []
 
     def evaluate(self, filename):
@@ -16,6 +16,19 @@ class Evaluation:
 
 
     def loadData(self, filename):
-        with open(filename, "r") as f:
-            for line in f:
-                line = line.split()
+        f = open(filename, "r")
+        content = f.readlines()
+        line = content[0].split()
+        # Collect the names of all players
+        for e in line:
+            if type(e) is str:
+                self.players.append(e)
+
+        # parse the results of each game (=each line) in data
+        for l in content:
+            l = l.split()
+            row = []
+            for m in l:
+                if type(m) is str:
+                    row.append(m)
+            self.data.append(row)

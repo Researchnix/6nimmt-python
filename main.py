@@ -13,6 +13,7 @@ import Deck
 import GameMaster
 import Field
 import LogWriter
+import Evaluation
 
 
 
@@ -20,9 +21,18 @@ import LogWriter
 if __name__ == "__main__":
     t = time.time()
 
+    filename = "results.txt"
 
-    master = GameMaster.GameMaster("results.txt")
+    master = GameMaster.GameMaster(filename)
     master.playGames(100)
+
+    eva = Evaluation.Evaluation()
+    eva.loadData(filename)
+
+    print "the players are"
+    print eva.players 
+    print '\n\n\n'
+    print eva.data
 
 
     """
