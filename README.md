@@ -13,10 +13,15 @@ This is again an implementation of the board game 6nimmt, this time in python. M
 #How to code a player for this game
 
 If you want to implement your own player for this game, all you need to do is:
+
 1) Write a derived class to the base class Player
+
 2) Import your class in Gamemaster.py
+
 3) Change the function 'initializePlayers' in GameMaster.py line 21 by adding an instance of your class as a new player
+
     e.g.    p3 = Myplayer.Myplayer("YOUR_NAME")
+
             self.players.append(p3)
 
 
