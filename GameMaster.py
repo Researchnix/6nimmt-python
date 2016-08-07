@@ -21,7 +21,7 @@ class GameMaster:
     def initializePlayers(self):
         # Initialize the players
         p1 = Player.Player("Lennart")
-        p2 = Player.Player("HansWurst")
+        p2 = Player.Player("DaVinci")
         self.players.append(p1)
         self.players.append(p2)
         '''
