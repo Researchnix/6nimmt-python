@@ -14,7 +14,7 @@ class LogWriter:
 
 
 
-    def __init__(self, filename):
+    def setFilename(self, filename):
         self.filename = filename
 
     def delete(self):

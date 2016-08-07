@@ -16,7 +16,13 @@ class GameMaster:
     field = Field.Field()
     roundCount = 0
     deck = Deck.Deck()
-    loggy = LogWriter.LogWriter("results.txt")
+    filename = "dummy.txt"
+    loggy = LogWriter.LogWriter()
+
+
+    def __init__(self, filename):
+        self.filename = filename
+        self.loggy.setFilename(filename)
 
     def initializePlayers(self):
         # Initialize the players

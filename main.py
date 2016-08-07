@@ -21,7 +21,7 @@ if __name__ == "__main__":
     t = time.time()
 
 
-    master = GameMaster.GameMaster()
+    master = GameMaster.GameMaster("results.txt")
     master.playGames(100)
 
 
