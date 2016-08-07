@@ -1,11 +1,11 @@
 # 6nimmt-python
-#
-#  README.md
-#  6nimmt
-#
-#  Created by Lennart Doppenschmitt on 2016-08-06.
-#  Copyright 2016 Researchnix. All rights reserved.
-#
+
+  README.md
+  6nimmt
+
+  Created by Lennart Doppenschmitt on 2016-08-06.
+  Copyright 2016 Researchnix. All rights reserved.
+
 
 
 This is again an implementation of the board game 6nimmt, this time in python. Most people are probably more familiar with python and if I decide to play around with machine learning, it is easier to experiment with tensorFlow and other things in python.
