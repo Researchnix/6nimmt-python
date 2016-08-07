@@ -20,7 +20,7 @@ If you want to implement your own player for this game, all you need to do is:
 
 3) Change the function 'initializePlayers' in GameMaster.py line 21 by adding an instance of your class as a new player
 
-    e.g.    p3 = Myplayer.Myplayer("YOUR_NAME")
+            p3 = Myplayer.Myplayer("YOUR_NAME")
 
             self.players.append(p3)
 
