@@ -12,6 +12,7 @@ import Field
 import Player
 
 class GameMaster:
+    verbose = False
     players = []
     field = Field.Field()
     roundCount = 0
@@ -28,8 +29,10 @@ class GameMaster:
         # Initialize the players
         p1 = Player.Player("Lennart")
         p2 = Player.Player("DaVinci")
+        p3 = Player.Player("Newton")
         self.players.append(p1)
         self.players.append(p2)
+        self.players.append(p3)
         '''
         for p in self.players:
             print "Player " + p.name + " has on his hands "
@@ -96,14 +99,17 @@ class GameMaster:
             #print "############## ROUND " + str(i) +  " ##############"
             self.playRound()
 
-    def playGames(self, n):
+    def playGames(self, n, verbose=False):
+        print "Starting to play " + str(n) + " games"
         # delete all results in the file
         self.loggy.delete()
         self.initializePlayers()
         for m in range(n):
-            print " ########### Game " + str(m) + "  ########### "
+            if self.verbose:
+                print " ########### Game " + str(m) + "  ########### "
             self.initializeGame()
-            print "game initialized"
+            if self.verbose:
+                print "game initialized"
             self.playRounds(10)
 
             # save the results to a file
@@ -111,7 +117,7 @@ class GameMaster:
             for p in self.players:
                 results[p.name] = p.bulls
             self.loggy.save(results)
-            print results
-            print '\n'
+            #print results
+            #print '\n'
             
         

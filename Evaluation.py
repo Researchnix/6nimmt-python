@@ -6,7 +6,8 @@
 #  Copyright 2016 Researchnix. All rights reserved.
 #
 
-from pylab import *
+#from pylab import *
+import matplotlib.pyplot as plt
 
 class Evaluation:
     n = 0
@@ -75,14 +76,19 @@ class Evaluation:
         trata = self.tr(self.data)
         self.findWinner()
         self.makeChart()
+        print "Total number of wins:\n"
+        for j in range(self.n):
+            print self.players[j] + " has won " + str(self.winner.count(j)) + " times"
         #y = trata[0]
         #y = self.chart[0]
-        y0 = self.cumulativeChart[0]
-        y1 = self.cumulativeChart[1]
-        x = range(len(y0))
-        plot(x,y0)
-        plot(x,y1)
-        show()
+        plt.subplot(111)
+        plt.title("Evaluation of 6nimmt")
+        plt.xlabel("Number of played games")
+        plt.ylabel("Number of games won (cumulative sum)")
+        for j in range(self.n):
+            plt.plot(range(len(self.cumulativeChart[j])), self.cumulativeChart[j], label= self.players[j])
+        plt.legend()
+        plt.show()
 
 
     # The transpose of a list of lists
