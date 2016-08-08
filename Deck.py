@@ -6,7 +6,8 @@
 #  Copyright 2016 Researchnix. All rights reserved.
 #
 
-from random import randint
+#from random import randint
+import random
 
 class Deck:
     """A deck of cards"""
@@ -21,7 +22,10 @@ class Deck:
         return result
 
     def shuffle(self):
+        random.shuffle(self.content)
+        '''
         for e in range(10*len(self.content)):
             a = randint(0,len(self.content)-1)
             n = self.content.pop(a)
             self.content.append(n)
+        '''
