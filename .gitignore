@@ -6,8 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
-# Text files
+# Text files and pictures
 *.txt
+*.png
 
 # Distribution / packaging
 .Python
