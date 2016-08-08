@@ -1,5 +1,5 @@
 #
-#  MinPlayer.py
+#  Fabian.py
 #  6nimmt
 #
 #  Created by Lennart Doppenschmitt on 2016-08-06.
