@@ -72,7 +72,7 @@ class Evaluation:
 
 
 
-    def showData(self):
+    def showData(self, showPlot=False):
         trata = self.tr(self.data)
         self.findWinner()
         self.makeChart()
@@ -88,7 +88,10 @@ class Evaluation:
         for j in range(self.n):
             plt.plot(range(len(self.cumulativeChart[j])), self.cumulativeChart[j], label= self.players[j])
         plt.legend()
-        plt.show()
+        if showPlot:
+            plt.show()
+        else:
+            plt.savefig("results.png")
 
 
     # The transpose of a list of lists
