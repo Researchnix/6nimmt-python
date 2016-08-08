@@ -43,7 +43,7 @@ class Evaluation:
 
     def findWinner(self):
         for e in self.data:
-            self.winner.append(e.index(max(e)))
+            self.winner.append(e.index(min(e)))
 
     def basisVector(self, n, i):
         result = [0 for j in range(n)]
