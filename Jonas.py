@@ -14,7 +14,16 @@ def get_n_heads(num):
 
 sum_row = lambda row: reduce(lambda x, y: get_n_heads(x)+y, row)
 
-sort_hand = lambda hand: sorted(hand, key=get_n_heads, reverse=True)
+def sort_hand(name):
+	# Higher bulls first
+	if name == "Mean":
+		return lambda hand: sorted(hand, key=get_n_heads, reverse=True)
+	# Lower bulls first
+	elif name == "Soft":
+		return lambda hand: sorted(hand, key=get_n_heads)
+	# Identity
+	else:
+		return lambda hand: hand
 
 class Jonas(Player.Player):
 
