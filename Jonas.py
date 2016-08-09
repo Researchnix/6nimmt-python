@@ -23,7 +23,7 @@ class Jonas(Player.Player):
 		# Picks minimal bull row, believe it
 		return fields.cards.index((min(fields.cards, key=sum_row)))
 
-	def pickCard(self, fields):
+	def playCard(self, fields):
 		# sorts from highest bulls to lower
 		self.hand = sort_hand(self.hand)
 
