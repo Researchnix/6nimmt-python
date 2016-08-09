@@ -36,7 +36,7 @@ class Jonas(Player.Player):
 		# hand sort behaviour based on name
 		self.hand = sort_hand(self.name)(self.hand)
 
-		# figures the highest bull rate card that don't take cards
+		# Tries to not get bulls
 		for card in self.hand:
 			tmp = {}
 			for n, row in enumerate(fields.cards):
