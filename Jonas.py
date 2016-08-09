@@ -33,8 +33,8 @@ class Jonas(Player.Player):
 		return fields.cards.index((min(fields.cards, key=sum_row)))
 
 	def playCard(self, fields):
-		# sorts from highest bulls to lower
-		self.hand = sort_hand(self.hand)
+		# hand sort behaviour based on name
+		self.hand = sort_hand(self.name)(self.hand)
 
 		# figures the highest bull rate card that don't take cards
 		for card in self.hand:
