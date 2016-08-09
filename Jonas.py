@@ -40,6 +40,6 @@ class Jonas(Player.Player):
 				continue
 
 			index = max(tmp.keys(), key=lambda x: tmp[x])
-			if len(fields[index]) < 5:
+			if len(fields.cards[index]) < 5:
 				return card
 		return self.hand[0]
