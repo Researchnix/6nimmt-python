@@ -12,7 +12,7 @@ import Field
 import Player
 import MinPlayer
 import Lennart
-
+import Jonas
 
 class GameMaster:
     verbose = False
@@ -30,12 +30,14 @@ class GameMaster:
 
     def initializePlayers(self):
         # Initialize the players
-        p2 = Player.Player("DaVinci")
-        p3 = Player.Player("Newton")
-        p6 = Lennart.Lennart("Lennart3", 3)
+        p1 = Player.Player("DaVinci")
+        p2 = Player.Player("Newton")
+        p3 = Lennart.Lennart("Lennart", 1)
+        p4 = Jonas.Jonas("Jonas")
+        self.players.append(p1)
         self.players.append(p2)
         self.players.append(p3)
-        self.players.append(p6)
+        self.players.append(p4)
         '''
         for p in self.players:
             print "Player " + p.name + " has on his hands "

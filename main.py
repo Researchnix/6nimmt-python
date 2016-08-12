@@ -24,7 +24,7 @@ if __name__ == "__main__":
     filename = "results.txt"
 
     master = GameMaster.GameMaster(filename)
-    master.playGames(100000, verbose=False)
+    master.playGames(10000, verbose=False)
 
     eva = Evaluation.Evaluation()
     eva.loadData(filename)
