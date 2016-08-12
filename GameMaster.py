@@ -11,7 +11,8 @@ import LogWriter
 import Field
 import Player
 import MinPlayer
-import Fabian
+import Lennart
+
 
 class GameMaster:
     verbose = False
@@ -29,14 +30,12 @@ class GameMaster:
 
     def initializePlayers(self):
         # Initialize the players
-        p1 = Player.Player("Lennart")
         p2 = Player.Player("DaVinci")
         p3 = Player.Player("Newton")
-        p4 = Fabian.Fabian("Fabian")
-        self.players.append(p1)
+        p6 = Lennart.Lennart("Lennart3", 3)
         self.players.append(p2)
         self.players.append(p3)
-        self.players.append(p4)
+        self.players.append(p6)
         '''
         for p in self.players:
             print "Player " + p.name + " has on his hands "
