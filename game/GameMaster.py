@@ -7,12 +7,9 @@
 #
 
 import Deck
-import LogWriter
+from utils import LogWriter
 import Field
-import Player
-import MinPlayer
-import Lennart
-import Jonas
+from players import *
 
 class GameMaster:
     verbose = False

@@ -9,14 +9,8 @@
 import sys
 import time
 
-import Deck
-import GameMaster
-import Field
-import LogWriter
-import Evaluation
-
-
-
+from game import *
+from utils import *
 
 if __name__ == "__main__":
     t = time.time()
