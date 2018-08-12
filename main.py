@@ -7,6 +7,7 @@
 #
 #  Now everything is back to normal
 #  This time it seems to work just fine.
+#  So the trick is to close the Gstatus window before typing :Gpush
 
 import sys
 import time
