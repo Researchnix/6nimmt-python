@@ -24,6 +24,3 @@ if __name__ == "__main__":
     eva.loadData(filename)
     print "\n\nDone in " + str(time.time() - t) + " s"
     eva.showData(showPlot=True)
-
-#  Let me add a random comment here.
-#  Or even more comments.
