@@ -6,6 +6,7 @@
 #  Copyright 2016 Researchnix. All rights reserved.
 #  But I didn't actually wanted to make these chages...
 #  So let's remove them after this trial of git again.
+#  But only after I got the git integration into nvim working!!
 #
 
 import Player
