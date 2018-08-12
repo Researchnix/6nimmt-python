@@ -10,6 +10,8 @@
 #  So the trick is to close the Gstatus window before typing :Gpush
 #  Yes, indeed!
 #  Let's try out my new keybindings for fugitive.
+#  I need to do this again!! It's soo fun!!
+
 
 import sys
 import time
