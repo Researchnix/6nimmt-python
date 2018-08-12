@@ -6,10 +6,6 @@
 #  Copyright 2016 Researchnix. All rights reserved.
 #
 
-
-
-
-
 import sys
 import time
 
