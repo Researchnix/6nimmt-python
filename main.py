@@ -5,12 +5,6 @@
 #  Created by Lennart Doppenschmitt on 2016-08-06.
 #  Copyright 2016 Researchnix. All rights reserved.
 #
-#  Now everything is back to normal
-#  This time it seems to work just fine.
-#  So the trick is to close the Gstatus window before typing :Gpush
-#  Yes, indeed!
-#  Let's try out my new keybindings for fugitive.
-#  I need to do this again!! It's soo fun!!
 
 
 
